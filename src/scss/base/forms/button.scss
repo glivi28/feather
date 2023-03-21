@@ -1,14 +1,25 @@
 //<BUTTONS (a.btn+tab)>
 // Сніппет (HTML): btn
 
-.button {
+.btn {
 	display: inline-flex;
-	padding: 0px 0px;
+	padding: rem(16) rem(40);
+	line-height: 156%;
+	border: rem(1) solid transparent;
+	border-radius: rem(30);
+	transition: all 0.3s ease 0s;
+	&_accent {
+		background-color: $accentColor;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: transparent;
+				border: rem(1) solid $accentColor;
+				color: $accentColor;
+			}
+		}
+	}
 	@media (any-hover: hover) {
 		&:hover {
 		}
-	}
-	&._fw {
-		width: 100%;
 	}
 }

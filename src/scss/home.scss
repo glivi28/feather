@@ -1,3 +1,143 @@
 //====================================================================================================
-
+.hero {
+	position: relative;
+	padding: rem(85) rem(70);
+	background-color: $bglight;
+	// .hero__container
+	&__container {
+	}
+	// .hero__row
+	&__row {
+		&:first-child {
+			margin-bottom: rem(330);
+		}
+	}
+	// .hero__info
+	&__info {
+		max-width: rem(571);
+		padding-left: rem(46);
+	}
+	// .hero__title
+	&__title {
+		margin-bottom: rem(18);
+		font-size: rem(64);
+		line-height: 119%;
+	}
+	// .hero__text
+	&__text {
+		margin-bottom: rem(46);
+		line-height: 156%;
+	}
+	// .hero__btn
+	&__btn {
+	}
+	// .hero__image-ibg
+	&__image-ibg {
+		position: absolute;
+		top: rem(85);
+		right: 0;
+		width: percent(628, 1280);
+		padding-bottom: percent(419, 1280);
+	}
+	// .hero__title-h2
+	&__title-h2 {
+		margin-bottom: rem(40);
+		font-size: rem(48);
+		text-align: center;
+		line-height: 112%;
+	}
+	// .hero__cards
+	&__cards {
+		@include gridCards($min: rem(244), $gap: rem(36));
+	}
+	// .hero__card
+	&__card {
+	}
+}
+.btn {
+}
+.card-hero {
+	z-index: 1;
+	position: relative;
+	display: block;
+	background-color: #fff;
+	border-radius: rem(4);
+	&::before {
+		content: "";
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		width: 100%;
+		height: 100%;
+		border: rem(2) solid transparent;
+		border-radius: rem(4);
+	}
+	&::after {
+		z-index: -1;
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		content: "";
+		width: 100%;
+		height: 100%;
+		border-radius: rem(4);
+	}
+	&_1 {
+		&::before {
+			content: "";
+			border-color: $accentColor;
+		}
+		&::after {
+			background-color: #cbc6f4;
+		}
+	}
+	&_2 {
+		&::before {
+			content: "";
+			border-color: #225dca;
+		}
+		&::after {
+			background-color: #e7cb43;
+		}
+	}
+	&_3 {
+		&::before {
+			content: "";
+			border-color: #242947;
+		}
+		&::after {
+			background-color: #a2d4c5;
+		}
+	}
+	&_4 {
+		&::before {
+			content: "";
+			border-color: #de4333;
+		}
+		&::after {
+			background-color: #af4920;
+		}
+	}
+	// .card-hero__image
+	&__image {
+		width: 100%;
+		img {
+			border-top-right-radius: rem(4);
+			border-top-left-radius: rem(4);
+			width: 100%;
+		}
+	}
+	// .card-hero__title
+	&__title {
+		padding: rem(15) rem(30) rem(20);
+		font-size: rem(17);
+		line-height: 165%;
+		text-align: center;
+		background-color: #fff;
+		border-bottom-left-radius: rem(4);
+		border-bottom-right-radius: rem(4);
+	}
+}
 //====================================================================================================

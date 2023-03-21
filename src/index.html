@@ -1,15 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"HomePage"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__row">
+						<div class="hero__info">
+							<h1 class="hero__title">Curated and Convenient</h1>
+							<p class="hero__text">We've built our offerings on the principle that everyone deserves high-quality
+								design
+								without the high cost. We offer elevated rental inventory, to transform your space. Reuse and recycle -
+								we
+								make the decision as light as a “feather”</p>
+							<a href="#" class="hero__btn btn btn_accent">Get Started</a>
+						</div>
+						<div class="hero__image-ibg">
+							<img src="@img/hero/hero-img.jpg" alt="">
+						</div>
+					</div>
+					<div class="hero__row">
+						<h2 class="hero__title-h2">Shop by Room</h2>
+						<div class="hero__cards">
+							<a href="#" class="hero__card card-hero card-hero_1">
+								<div class="card-hero__image">
+									<img src="@img/hero/01.jpg" alt="">
+								</div>
+								<h3 class="card-hero__title">Living Room</h3>
+							</a>
+							<a href="#" class="hero__card card-hero card-hero_2">
+								<div class="card-hero__image">
+									<img src="@img/hero/02.jpg" alt="">
+								</div>
+								<h3 class="card-hero__title">Bedroom</h3>
+							</a>
+							<a href="#" class="hero__card card-hero card-hero_3">
+								<div class="card-hero__image">
+									<img src="@img/hero/03.jpg" alt="">
+								</div>
+								<h3 class="card-hero__title">Home Office</h3>
+							</a>
+							<a href="#" class="hero__card card-hero card-hero_4">
+								<div class="card-hero__image">
+									<img src="@img/hero/04.jpg" alt="">
+								</div>
+								<h3 class="card-hero__title">Dining Room</h3>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /.hero -->
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
 </html>

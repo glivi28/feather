@@ -1,7 +1,81 @@
 //====================================================================================================
-
+.header {
+	font-size: rem(16);
+	background-color: $bglight;
+	// .header__container
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: rem(30);
+		padding-bottom: rem(30);
+	}
+	// .header__menu
+	&__menu {
+		display: flex;
+		align-items: center;
+	}
+	// .header__logo
+	&__logo {
+	}
+	// .header__links
+	&__links {
+		display: flex;
+		align-items: center;
+		column-gap: rem(36);
+		row-gap: rem(10);
+	}
+	// .header__link
+	&__link {
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $accentColor;
+			}
+		}
+	}
+	// .header__cart
+	&__cart {
+		width: rem(26);
+		height: rem(25);
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				fill: $accentColor;
+			}
+		}
+	}
+}
+.menu {
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+	}
+	// .menu__list
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: rem(36);
+		row-gap: rem(10);
+	}
+	// .menu__item
+	&__item {
+	}
+	// .menu__link
+	&__link {
+		transition: all 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				color: $accentColor;
+			}
+		}
+	}
+}
+.icon-menu {
+}
 //====================================================================================================
-
 //Burger
 /*
 .icon-menu {
